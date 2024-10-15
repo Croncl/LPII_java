@@ -1,0 +1,77 @@
+Padrão MVC (Model-View-Controller)
+O padrão MVC (Model-View-Controller) é uma arquitetura de software que separa a aplicação em três componentes principais:
+
+    Model (Modelo): Representa os dados e a lógica de negócios da aplicação. É responsável por acessar e manipular os dados.
+
+    View (Visão): Representa a interface do usuário. É responsável por exibir os dados ao usuário e capturar as interações do usuário.
+
+    Controller (Controlador): Atua como um intermediário entre o Model e a View. Recebe as entradas do usuário através da View, processa essas entradas (usando o Model), e atualiza a View conforme necessário.
+
+
+# MeuProjeto
+
+MeuProjeto/
+├── src/
+│   ├── model/
+│   │   └── Modelo.java
+│   ├── view/
+│   │   └── Visao.java
+│   ├── controller/
+│   │   └── Controlador.java
+│   └── App.java
+└── bin/
+
+
+
+Este projeto segue o padrão de arquitetura MVC (Model-View-Controller) e foi configurado para ser desenvolvido no Visual Studio Code (VS Code).
+
+## Estrutura do Projeto
+
+A estrutura do projeto é organizada da seguinte forma:
+
+
+
+## Como Gerar o Projeto
+
+Siga os passos abaixo para gerar a estrutura do projeto:
+
+1. **Baixe o Script**:
+   - Baixe o script [geraprojetoMVC.sh]e salve-o no diretório onde deseja criar o projeto.
+
+2. **Torne o Script Executável**:
+   - No terminal, navegue até o diretório onde o script está salvo e torne-o executável:
+     ```sh
+     chmod +x geraprojetoMVC.sh
+     ```
+
+3. **Execute o Script**:
+   - Execute o script e digite o nome do projeto quando solicitado:
+     ```sh
+     ./geraprojetoMVC.sh
+     ```
+
+4. **Abra o Projeto no VS Code**:
+   - Abra o VS Code e selecione `File > Open Folder` para abrir a pasta do projeto gerado.
+
+5. **Compilar o Projeto**:
+   - No VS Code, pressione `Ctrl+Shift+B` para compilar o projeto usando a tarefa definida no `tasks.json`.
+
+6. **Executar o Projeto**:
+   - Após a compilação, pressione `F5` ou selecione `Run > Start Debugging` para executar o projeto.
+
+## Exemplo de Código
+
+Aqui está um exemplo simples de como os arquivos de código podem ser organizados seguindo o padrão MVC:
+
+**`src/App.java`**:
+```java
+import controller.Controlador;
+
+public class App {
+    public static void main(String[] args) {
+        Controlador controlador = new Controlador();
+        controlador.iniciar();
+    }
+}
+
+

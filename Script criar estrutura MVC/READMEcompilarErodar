@@ -1,0 +1,52 @@
+## Estrutura do Projeto
+
+MeuProjeto/
+├── src/
+│   ├── model/
+│   │   └── Modelo.java
+│   ├── view/
+│   │   └── Visao.java
+│   ├── controller/
+│   │   └── Controlador.java
+│   └── App.java
+└── bin/
+
+
+## Como Compilar e Rodar o Projeto
+
+### Compilação
+
+1. **Abra o Projeto no VS Code**:
+   - Abra o VS Code e selecione `File > Open Folder` para abrir a pasta do projeto.
+
+2. **Compilar o Projeto**:
+   - No VS Code, pressione `Ctrl+Shift+B` para compilar o projeto usando a tarefa definida no [tasks.json](.vscode/tasks.json).
+
+### Execução
+
+1. **Executar o Projeto**:
+   - Após a compilação, pressione [`F5`] "Go to definition") ou selecione `Run > Start Debugging` para executar o projeto.
+
+### Compilação e Execução Manual no Terminal
+
+Se preferir compilar e executar manualmente no terminal, siga os passos abaixo:
+
+1. **Navegue até a Pasta do Projeto**:
+   - Abra o terminal e navegue até a pasta principal do projeto:
+     ```sh
+     cd MeuProjeto
+     ```
+
+2. **Compilar**:
+   - Compile os arquivos Java usando o comando [`javac`]
+     ```sh
+     javac -d bin -sourcepath src src/App.java src/model/Modelo.java src/view/Visao.java src/controller/Controlador.java
+     ```
+
+3. **Executar**:
+   - Execute o projeto usando o comando [`java`]
+     ```sh
+     java -cp bin App
+     ```
+
+Seguindo essas instruções, você poderá compilar e rodar o projeto Java no formato MVC no VS Code de maneira eficiente.
