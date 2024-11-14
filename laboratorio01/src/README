@@ -1,0 +1,63 @@
+
+# Sistema Bancário
+
+Este projeto é um sistema bancário simples implementado em Java, utilizando conceitos de Programação Orientada a Objetos (POO). O sistema permite cadastrar clientes, criar contas, realizar depósitos, saques e transferências.
+
+## Estrutura do Projeto
+
+O projeto está organizado nas seguintes pastas:
+
+- `src/`: Contém os arquivos fonte do projeto.
+  - `model/`: Contém as classes de modelo, como `Cliente`, `Conta`, `Movimentacao` e `Transferencia`.
+  - `view/`: Contém a classe `Visao`, responsável pela interação com o usuário.
+  - `controller/`: Contém a classe `Controlador`, que gerencia a lógica de negócios.
+- `bin/`: Diretório onde os arquivos `.class` compilados serão armazenados.
+
+## Pré-requisitos
+
+- Java Development Kit (JDK) instalado.
+- Um terminal ou prompt de comando.
+
+## Compilação
+
+Para compilar o projeto, siga os passos abaixo:
+
+1. Abra o terminal.
+2. Navegue até o diretório raiz do projeto.
+3. Execute o seguinte comando para compilar os arquivos Java:
+
+    ```sh
+    javac -d bin -sourcepath src src/App.java src/model/Cliente.java src/model/Conta.java src/model/Movimentacao.java src/model/Transferencia.java src/view/Visao.java src/controller/Controlador.java
+    ```
+
+Este comando compilará os arquivos Java e colocará os arquivos `.class` resultantes no diretório `bin`.
+
+## Execução
+
+Para executar o projeto, siga os passos abaixo:
+
+1. Após a compilação, ainda no terminal, execute o seguinte comando:
+
+    ```sh
+    java -cp bin App
+    ```
+
+Este comando executará a aplicação a partir do diretório `bin`.
+
+## Funcionalidades
+
+- **Cadastro de Clientes**: Permite cadastrar novos clientes no sistema.
+- **Cadastro de Contas**: Permite criar novas contas associadas a clientes existentes.
+- **Depósitos**: Permite realizar depósitos em contas.
+- **Saques**: Permite realizar saques de contas, verificando o saldo disponível.
+- **Transferências**: Permite realizar transferências entre contas, verificando o saldo disponível.
+
+## Estrutura das Classes
+
+- **model.Cliente**: Representa um cliente do banco.
+- **model.Conta**: Representa uma conta bancária.
+- **model.Movimentacao**: Representa uma movimentação financeira (depósito, saque).
+- **model.Transferencia**: Representa uma transferência entre contas.
+- **view.Visao**: Responsável pela interação com o usuário.
+- **controller.Controlador**: Gerencia a lógica de negócios e interage com as camadas de modelo e visão.
+- **App**: Classe principal que inicia a aplicação.
