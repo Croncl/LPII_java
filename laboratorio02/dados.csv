@@ -1,0 +1,4 @@
+CPF,Nome,Senha,NumeroAgencia,NumeroConta,TipoConta,Saldo
+1,1,1,1,1,ContaPoupanca,264.7575
+1,1,1,1,2,ContaCorrente,1213.0
+1,1,1,1,3,ContaSalario,32.0
